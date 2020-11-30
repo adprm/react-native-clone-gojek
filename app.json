@@ -1,0 +1,12 @@
+{
+  "name": "cloning-gojek",
+  "displayName": "cloning-gojek",
+  "expo": {
+    "name": "cloning-gojek",
+    "slug": "cloning-gojek",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
