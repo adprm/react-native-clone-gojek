@@ -1,12 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import { Constants } from 'react-native-unimodules';
 
 export default function App() {
   return (
     <View style={{flex: 1}}>
       {/* Content */}
-      <View style={{flex: 1, backgroundColor: 'pink'}}>
-        <Text>Open up App.js to start working on your app!</Text>
+      <View style={{flex: 1, backgroundColor: 'white'}}>
+        <View style={{paddingTop: Constants.statusBarHeight, marginHorizontal: 17, flexDirection: 'row'}}>
+          {/* Search bar */}
+          <View style={{position: 'relative', flex: 1}}>
+            <TextInput placeholder="What do you want to eat?" style={{borderWidth: 1, borderColor: '#e8e8e8', borderRadius: 25, height: 40, fontSize: 13, paddingLeft: 45, paddingRight: 20, backgroundColor: 'white', marginRight: 18}} />
+            <Image source={require('./icon/search.png')} style={{position: 'absolute', top: 5, left: 12}} />            
+          </View>
+          {/* Search bar promo icon */}
+          <View style={{width: 35, alignItems: 'center', justifyContent: 'center'}}>
+            <Image source={require('./icon/promo.png')} />
+          </View>
+        </View>
       </View>
 
       {/* Navigation */}
@@ -37,10 +48,5 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  
 });
