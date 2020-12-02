@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, ScrollView, TouchableOpacity } from 'react-native';
 import { Constants } from 'react-native-unimodules';
 
 export default function App() {
   return (
     <View style={{flex: 1}}>
       {/* Content */}
-      <View style={{flex: 1, backgroundColor: 'white'}}>
+      <ScrollView style={{flex: 1, backgroundColor: 'white'}}>
 
         {/* Search bar */}
         <View style={{paddingTop: Constants.statusBarHeight, marginHorizontal: 17, flexDirection: 'row'}}>
@@ -100,7 +100,29 @@ export default function App() {
             </View>
           </View>
         </View>
-      </View>
+
+        {/* Line Horizontal */}
+        <View style={{height: 17, backgroundColor: '#f2f2f4', marginTop: 20}}></View>
+
+        {/* News Section */}
+        <View style={{paddingTop: 16, paddingHorizontal: 16}}>
+          <View style={{position: 'relative'}}>
+            <Image source={require('./dummy/sepak-bola.jpg')} style={{height: 170, width: '100%', borderRadius: 6}} />
+            <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.2, borderRadiusL: 6}}></View>
+            <View style={{height: 15, width: 55, position: 'absolute', top: 16, left: 16}} >
+              <Image source={require('./logo/white.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}} />
+            </View>
+          </View>
+          <View style={{paddingTop: 16, paddingBottom: 20, borderBottomColor: '#e8e9ed', borderBottomWidth: 1, marginBottom: 20}}>
+            <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1c1c1c'}}>GO-NEWS</Text>
+            <Text style={{fontSize: 14, fontWeight: 'normal', color: '#7a7a7a', marginBottom: 11}}>Dimas Drajat selamatkan penalti, Timnas u-23 Kalahkan Brunei.</Text>
+            <TouchableOpacity style={{backgroundColor: '#61a756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 4}}>
+              <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', textAlign: 'center'}}>READ</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+
+      </ScrollView>
 
       {/* Navigation */}
       <View style={{height: 54, flexDirection: 'row', backgroundColor: 'white'}}>
