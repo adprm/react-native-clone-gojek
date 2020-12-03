@@ -23,7 +23,7 @@ export default function App() {
         <View style={{marginHorizontal: 17, marginTop: 8}}>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#2c5fbb', borderTopLeftRadius: 4, borderTopRightRadius: 4, padding: 14}}>
             <Image source={require('./icon/gopay.png')} />
-            <Text style={{fontSize: 17, fontWeight: 'bold', color: 'white'}}>Rp 1.568.000</Text>
+            <Text style={{fontSize: 17, fontWeight: 'bold', color: 'white'}}>Rp 22.568.000</Text>
           </View>
           <View style={{flexDirection: 'row', paddingTop: 20, paddingBottom: 14, backgroundColor: '#2f65bd', borderBottomLeftRadius: 4, borderBottomRightRadius: 4}}>
             <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -109,7 +109,7 @@ export default function App() {
           <View style={{position: 'relative'}}>
             <Image source={require('./dummy/sepak-bola.jpg')} style={{height: 170, width: '100%', borderRadius: 6}} />
             <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.2, borderRadiusL: 6}}></View>
-            <View style={{height: 15, width: 55, position: 'absolute', top: 16, left: 16}} >
+            <View style={{height: 15, width: 60, position: 'absolute', top: 16, left: 16}} >
               <Image source={require('./logo/white.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}} />
             </View>
           </View>
@@ -122,12 +122,33 @@ export default function App() {
           </View>
         </View>
 
+        {/* Internal information section */}
+        <View style={{padding: 16, paddingBottom: 0}}>
+          <View style={{height: 15, width: 60, marginLeft: -4}} >
+            <Image source={require('./logo/gojek.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}} />
+          </View>
+          <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1c1c1c', marginTop: 15, marginBottom: 20}}>Complete your profile</Text>
+          <View style={{flexDirection: 'row', marginBottom: 16}}>
+            <View>
+              <Image source={require('./dummy/facebook-connect.png')} />
+            </View>
+            <View style={{marginLeft: 16, flex: 1}}>
+              <Text style={{fontSize: 15, color: '#4a4a4a', fontWeight: 'bold'}}>Connect with Facebook</Text>
+              <Text style={{fontSize: 15, fontWeight: 'normal', color: '#4a4a4a', width: '70%'}}>Log in faster without verification code</Text>
+            </View>
+          </View>
+          <TouchableOpacity style={{backgroundColor: '#61a756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 4}}>
+            <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', textAlign: 'center'}}>CONNECT</Text>
+          </TouchableOpacity>
+          <View style={{borderBottomWidth: 1, borderBottomColor: '#e8e9ed', marginTop: 16}}></View> 
+        </View>
+
         {/* Go food banner section */}
         <View style={{padding: 16}}>
           <View style={{position: 'relative'}}>
             <Image source={require('./dummy/food-banner.jpg')} style={{height: 170, width: '100%', borderRadius: 6}} />
             <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.15, borderRadiusL: 6}}></View>
-            <View style={{height: 15, width: 55, position: 'absolute', top: 16, left: 16}} >
+            <View style={{height: 15, width: 60, position: 'absolute', top: 16, left: 16}} >
               <Image source={require('./logo/white.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}} />
             </View>
             <View style={{position: 'absolute', bottom: 0, left: 0, width: '100%', flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingBottom: 16}}>
