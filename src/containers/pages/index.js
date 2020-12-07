@@ -3,5 +3,5 @@ import NewsDetail from './NewsDetail';
 
 export {
     Home,
-    NewsDetail
+    NewsDetail,
 }
