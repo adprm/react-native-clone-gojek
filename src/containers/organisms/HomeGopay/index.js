@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View, Image } from 'react-native';
 import GopayFeature from '../../../components/moleculs/GopayFeature';
+// import { withNavigation } from 'react-navigation';
 
 class HomeGopay extends Component {
     render() {
