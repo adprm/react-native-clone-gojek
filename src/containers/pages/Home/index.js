@@ -29,7 +29,7 @@ class Home extends Component {
                     <View style={{height: 17, backgroundColor: '#f2f2f4', marginTop: 20}}></View>
             
                     {/* News Section */}
-                    <GoNews onPress={() => this.props.navigation.navigate('NewsDetail')} />
+                    <GoNews onPress={() => this.props.navigation.navigate('News Detail')} />
             
                     {/* Internal information section */}
                     <GoInfo />

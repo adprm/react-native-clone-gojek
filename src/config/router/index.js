@@ -10,13 +10,13 @@ function Router() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home' screenOptions={{
-          headerShown: false
+        headerShown: false
       }}>
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="NewsDetail" component={NewsDetail} />
+        <Stack.Screen name="News Detail" component={NewsDetail} />
       </Stack.Navigator>
     </NavigationContainer>
-  );
+  )
 }
 
 export default Router;
